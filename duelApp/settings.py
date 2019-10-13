@@ -29,7 +29,9 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+3k7&w#19_h&lt$p(=%t0*=#cd8re&
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'duelinthedesert.herokuapp.com','127.0.0.1',
+]
 
 
 # Application definition
