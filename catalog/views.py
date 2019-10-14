@@ -62,7 +62,10 @@ def playerdetail (request,name):
 
     ##START ROUND 1 CALCULATIONS -->
     #Trigger to show score only when round finished
-    rd1holes_played = Rd1SlotModel.objects.get(player_name__name=name).player_holesplayed
+    try:
+        rd1holes_played = Rd1SlotModel.objects.get(player_name__name=name).player_holesplayed
+    except:
+        rd1holes_played = 0
 
     #Rd1 Player golf score & rank
     if rd1holes_played >= target_holes:
