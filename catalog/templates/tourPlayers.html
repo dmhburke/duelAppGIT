@@ -5,8 +5,8 @@
 <div id="fullscreenScrollContainer">
 
 <div class="bigShadow" id="playerTile">
-  <div class="yellowBackground" id="playerTileHeader">
-    <div class="blueText indyText" id="playerIndyHeader">The Indy1200</div>
+  <div class="purpleBackground" id="playerTileHeader">
+    <div class="orangeText duelText" id="playerIndyHeader" style="font-size: 2.2rem;">The Duel in the Desert</div>
     <div class="bold whiteText" id="playerSubHeader">Player details</div>
   </div>
 
@@ -14,13 +14,13 @@
   {% for player in active_players %}
 
   <div class="bigShadow" id="playerDetailsTile">
-    <img class="bigShadow" id="imgContainer" src="{{ player.image.url }}"><div class="indyText yellowBackground blueBorder2 blueText" id=tourNumber>{{ player.tournum }}</div>
+    <img class="bigShadow" id="imgContainer" src="{{ player.image.url }}"><div class="duelText lightorangeBackground purpleBorder2 purpleText" style="line-height: 29px;" id=tourNumber>{{ player.tournum }}</div>
     <div id="contentContainer">
       <div class="" id="contentHeader">
-        <img id="tourIcon" src="{% static 'icons/tourdetailsFlagBlue.svg' %}">
-        <div class="blueText indyText" id="detailsPlayerName">{{ player.name }} ({{ player.HC }})</div>
+        <img id="tourIcon" src="{% static 'icons/cactusLogoOrange.svg' %}">
+        <div class="purpleText duelText" style="line-height: 35px;" id="detailsPlayerName">{{ player.name }} ({{ player.HC }})</div>
         <div id="contentDescription">{{ player.description }}</div>
-        <div class="yellowBackground blueText indyText" id="contentNickname"> {{ player.nickname }}</div>
+        <div class="lightorangeBackground purpleText duelText" style="font-size: 1.5rem; line-height: 22px;" id="contentNickname"> {{ player.nickname }}</div>
       </div>
       {% if player.jacket == "YES" %}
       <img class="" id="jacketIcon" src="{% static 'icons/tourdetailsJacketGreen.svg' %}">
