@@ -2118,13 +2118,14 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 20px;
   margin: 7px auto;
   padding-bottom: 15px;
-  border-bottom: 2px solid #FEA002;
+
 }
 
 #playerTileHeader {
   height: 75px;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  border-bottom: 4px solid #FEA002;
 
 }
 
