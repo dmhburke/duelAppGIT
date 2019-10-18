@@ -14,7 +14,7 @@
   {% for player in active_players %}
 
   <div class="bigShadow" id="playerDetailsTile">
-    <img class="bigShadow" id="imgContainer" src="{{ player.image.url }}"><div class="duelText lightorangeBackground purpleBorder2 purpleText" style="line-height: 29px;" id=tourNumber>{{ player.tournum }}</div>
+    <img class="bigShadow lightorangeBorder2" id="imgContainer" src="{{ player.image.url }}"><div class="duelText lightorangeBackground purpleBorder2 purpleText" style="line-height: 29px;" id=tourNumber>{{ player.tournum }}</div>
     <div id="contentContainer">
       <div class="" id="contentHeader">
         <img id="tourIcon" src="{% static 'icons/cactusLogoOrange.svg' %}">
