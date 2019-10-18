@@ -2187,7 +2187,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
-  width: 15%;
+  width: 14%;
 }
 
 #contentContainer {
@@ -2202,7 +2202,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-block;
   vertical-align: middle;
   height: 90%;
-  width: 82%;
+  width: 83%;
   line-height: 32px;
   padding-left: 0px;
   padding-bottom: 0px;
@@ -2214,7 +2214,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 0.7rem;
   text-align: left;
   margin-left: 38px;
-  padding-top: 1px;
+  padding-top: -1px;
 
 }
 #contentNickname {
