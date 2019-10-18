@@ -2193,7 +2193,6 @@ input[type=number]::-webkit-outer-spin-button {
 #contentContainer {
   display: inline-block;
   vertical-align: middle;
-
   height: 90%;
   width: 215px;
 }
@@ -2213,7 +2212,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 82%;
   font-size: 0.7rem;
   text-align: left;
-  margin-left: 38px;
+  margin-left: 36px;
   padding-top: -1px;
 
 }
