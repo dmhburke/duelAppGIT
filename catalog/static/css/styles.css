@@ -494,10 +494,11 @@ a:link {
 #fullLeaderboardBody {
   width: 99%;
   margin: 0 auto;
-  overflow: scroll;
+
   min-height: 370px;
   background-color: white;
-  -webkit-overflow-scrolling: touch;
+  /* overflow: scroll;
+  -webkit-overflow-scrolling: touch; */
 
 }
 
