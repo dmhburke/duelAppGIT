@@ -575,7 +575,7 @@ def round1_callback_two(sender, instance, **kwargs):
 
     ##ENDURANCE SCORE CALCS
     ##Calculating highest difference between second and first nine of Round1
-    endurance_trigger = 3 ##SET TO 9 IN PRODUCTION
+    endurance_trigger = 10 ##SET TO 18 IN PRODUCTION
     front_nine = 9
     back_nine = 10
     slot1_holesplayed = Rd1SlotModel.objects.get(player_slot=1).player_holesplayed
@@ -592,7 +592,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score1 = None
     #Slot 2
     try:
-        if slot2_holesplayed >= endurance_trigger:
+        if slot2_holesplayed > endurance_trigger:
             slot2_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot2_stbl')).values())[0]
             slot2_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot2_stbl')).values())[0]
             endurance_score2 = slot2_back_ninetotal - slot2_front_ninetotal + (slot2_back_ninetotal/1000) + 100
@@ -602,7 +602,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score2 = None
     #Slot 3
     try:
-        if slot3_holesplayed >= endurance_trigger:
+        if slot3_holesplayed > endurance_trigger:
             slot3_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot3_stbl')).values())[0]
             slot3_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot3_stbl')).values())[0]
             endurance_score3 = slot3_back_ninetotal - slot3_front_ninetotal + (slot3_back_ninetotal/1000) + 100
@@ -612,7 +612,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score3 = None
     #Slot 4
     try:
-        if slot4_holesplayed >= endurance_trigger:
+        if slot4_holesplayed > endurance_trigger:
             slot4_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot4_stbl')).values())[0]
             slot4_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot4_stbl')).values())[0]
             endurance_score4 = slot4_back_ninetotal - slot4_front_ninetotal + (slot4_back_ninetotal/1000) + 100
@@ -622,7 +622,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score4 = None
     #Slot 5
     try:
-        if slot5_holesplayed >= endurance_trigger:
+        if slot5_holesplayed > endurance_trigger:
             slot5_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot5_stbl')).values())[0]
             slot5_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot5_stbl')).values())[0]
             endurance_score5 = slot5_back_ninetotal - slot5_front_ninetotal + (slot5_back_ninetotal/1000) + 100
@@ -632,7 +632,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score5 = None
     #Slot 6
     try:
-        if slot6_holesplayed >= endurance_trigger:
+        if slot6_holesplayed > endurance_trigger:
             slot6_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot6_stbl')).values())[0]
             slot6_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot6_stbl')).values())[0]
             endurance_score6 = slot6_back_ninetotal - slot6_front_ninetotal + (slot6_back_ninetotal/1000) + 100
@@ -642,7 +642,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score6 = None
     #Slot 7
     try:
-        if slot7_holesplayed >= endurance_trigger:
+        if slot7_holesplayed > endurance_trigger:
             slot7_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot7_stbl')).values())[0]
             slot7_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot7_stbl')).values())[0]
             endurance_score7 = slot7_back_ninetotal - slot7_front_ninetotal + (slot7_back_ninetotal/1000) + 100
@@ -652,7 +652,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score7 = None
     #Slot 8
     try:
-        if slot8_holesplayed >= endurance_trigger:
+        if slot8_holesplayed > endurance_trigger:
             slot8_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot8_stbl')).values())[0]
             slot8_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot8_stbl')).values())[0]
             endurance_score8 = slot8_back_ninetotal - slot8_front_ninetotal + (slot8_back_ninetotal/1000) + 100
@@ -662,7 +662,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score8 = None
     #Slot 9
     try:
-        if slot9_holesplayed >= endurance_trigger:
+        if slot9_holesplayed > endurance_trigger:
             slot9_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot9_stbl')).values())[0]
             slot9_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot9_stbl')).values())[0]
             endurance_score9 = slot9_back_ninetotal - slot9_front_ninetotal + (slot9_back_ninetotal/1000) + 100
@@ -672,7 +672,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score9 = None
     #Slot 10
     try:
-        if slot10_holesplayed >= endurance_trigger:
+        if slot10_holesplayed > endurance_trigger:
             slot10_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot10_stbl')).values())[0]
             slot10_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot10_stbl')).values())[0]
             endurance_score10 = slot10_back_ninetotal - slot10_front_ninetotal + (slot10_back_ninetotal/1000) + 100
@@ -682,7 +682,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score10 = None
     #Slot 11
     try:
-        if slot11_holesplayed >= endurance_trigger:
+        if slot11_holesplayed > endurance_trigger:
             slot11_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot11_stbl')).values())[0]
             slot11_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot11_stbl')).values())[0]
             endurance_score11 = slot11_back_ninetotal - slot11_front_ninetotal + (slot11_back_ninetotal/1000) + 100
@@ -692,7 +692,7 @@ def round1_callback_two(sender, instance, **kwargs):
         endurance_score11 = None
     #Slot 12
     try:
-        if slot12_holesplayed >= endurance_trigger:
+        if slot12_holesplayed > endurance_trigger:
             slot12_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot12_stbl')).values())[0]
             slot12_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot12_stbl')).values())[0]
             endurance_score12 = slot12_back_ninetotal - slot12_front_ninetotal + (slot12_back_ninetotal/1000) + 100
