@@ -628,7 +628,7 @@ def round1_callback_two(sender, instance, **kwargs):
     except:
         slot12_holesplayed = 0
 
-    #Slot 1
+    #Slot 1 --### UPDATE NUMBERS IN PRODUCTION
     try:
         if slot1_holesplayed >= endurance_trigger:
             slot1_front_ninetotal = list(Rd1StablefordModel.objects.filter(hole__lte=front_nine).aggregate(Sum('slot1_stbl')).values())[0]
@@ -655,7 +655,7 @@ def round1_callback_two(sender, instance, **kwargs):
             slot3_back_ninetotal = list(Rd1StablefordModel.objects.filter(hole__gte=back_nine).aggregate(Sum('slot3_stbl')).values())[0]
             endurance_score3 = slot3_back_ninetotal - slot3_front_ninetotal + (slot3_back_ninetotal/1000) + 100
         else:
-            endurance_score3 = 1000 #TEST ONLY: CHANGE IN PRODUCTION
+            endurance_score3 = None
     except:
         endurance_score3 = None
     #Slot 4
