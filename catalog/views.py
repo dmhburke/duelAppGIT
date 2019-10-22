@@ -58,7 +58,7 @@ def playerdetail (request,name):
     player_totalrank = LeaderBoardModel.objects.filter(overall_total__gt=player_totalpoints).count() + 1
 
 
-    target_holes = 1 #Change to 18 in production
+    target_holes = 10 #Change to 10 in production
 
     ##START ROUND 1 CALCULATIONS -->
     #Trigger to show score only when round finished
