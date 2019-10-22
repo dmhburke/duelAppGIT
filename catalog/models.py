@@ -588,43 +588,43 @@ def round1_callback_two(sender, instance, **kwargs):
     except:
         slot2_holesplayed = 0
     try:
-        slot3_holesplayed = Rd3SlotModel.objects.get(player_slot=3).player_holesplayed
+        slot3_holesplayed = Rd1SlotModel.objects.get(player_slot=3).player_holesplayed
     except:
         slot3_holesplayed = 0
     try:
-        slot4_holesplayed = Rd4SlotModel.objects.get(player_slot=4).player_holesplayed
+        slot4_holesplayed = Rd1SlotModel.objects.get(player_slot=4).player_holesplayed
     except:
         slot4_holesplayed = 0
     try:
-        slot5_holesplayed = Rd5SlotModel.objects.get(player_slot=5).player_holesplayed
+        slot5_holesplayed = Rd1SlotModel.objects.get(player_slot=5).player_holesplayed
     except:
         slot5_holesplayed = 0
     try:
-        slot6_holesplayed = Rd6SlotModel.objects.get(player_slot=6).player_holesplayed
+        slot6_holesplayed = Rd1SlotModel.objects.get(player_slot=6).player_holesplayed
     except:
         slot6_holesplayed = 0
     try:
-        slot7_holesplayed = Rd7SlotModel.objects.get(player_slot=7).player_holesplayed
+        slot7_holesplayed = Rd1SlotModel.objects.get(player_slot=7).player_holesplayed
     except:
         slot7_holesplayed = 0
     try:
-        slot8_holesplayed = Rd8SlotModel.objects.get(player_slot=8).player_holesplayed
+        slot8_holesplayed = Rd1SlotModel.objects.get(player_slot=8).player_holesplayed
     except:
         slot8_holesplayed = 0
     try:
-        slot9_holesplayed = Rd9SlotModel.objects.get(player_slot=9).player_holesplayed
+        slot9_holesplayed = Rd1SlotModel.objects.get(player_slot=9).player_holesplayed
     except:
         slot9_holesplayed = 0
     try:
-        slot10_holesplayed = Rd10SlotModel.objects.get(player_slot=10).player_holesplayed
+        slot10_holesplayed = Rd1SlotModel.objects.get(player_slot=10).player_holesplayed
     except:
         slot10_holesplayed = 0
     try:
-        slot11_holesplayed = Rd11SlotModel.objects.get(player_slot=11).player_holesplayed
+        slot11_holesplayed = Rd1SlotModel.objects.get(player_slot=11).player_holesplayed
     except:
         slot11_holesplayed = 0
     try:
-        slot12_holesplayed = Rd12SlotModel.objects.get(player_slot=12).player_holesplayed
+        slot12_holesplayed = Rd1SlotModel.objects.get(player_slot=12).player_holesplayed
     except:
         slot12_holesplayed = 0
 
@@ -667,7 +667,7 @@ def round1_callback_two(sender, instance, **kwargs):
         else:
             endurance_score4 = None
     except:
-        endurance_score4 = 1000 #TEST ONLY: CHANGE IN PRODUCTION
+        endurance_score4 = None #TEST ONLY: CHANGE IN PRODUCTION
     #Slot 5
     try:
         if slot5_holesplayed >= endurance_trigger:
