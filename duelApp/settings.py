@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+3k7&w#19_h&lt$p(=%t0*=#cd8re&
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = [
-    'http://www.duel.par6golf.com',
+    'duel.par6golf.com',
     'duelinthedesert.herokuapp.com',
     '127.0.0.1',
 ]
