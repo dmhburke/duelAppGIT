@@ -33,8 +33,8 @@ DAYS = (
 #TIPPING INPUT
 GAME_1 = (
     ("", "Select result"),
-    ("ROCKETS", "Rockets"),
     ("NETS", "Nets"),
+    ("ROCKETS", "Rockets"),
     )
 
 GAME_2 = (
