@@ -128,27 +128,27 @@ GAME_5R = (
 
 GAME_6R = (
     ("NOT_COMPLETE", "No result"),
+    ("ENGLAND", "England"),
+    ("SOUTH_AFRICA", "South Africa"),
+    )
+
+GAME_6R = (
+    ("NOT_COMPLETE", "No result"),
     ("ARSENAL", "Arsenal"),
     ("WOLVERHAMPTON", "Wolverhampton"),
     ("DRAW", "Draw"),
     )
 
-GAME_7R = (
+GAME_8R = (
     ("NOT_COMPLETE", "No result"),
     ("OLE_MISS", "Ole Miss"),
     ("AUBURN", "Auburn"),
     )
 
-GAME_8R = (
+GAME_9R = (
     ("NOT_COMPLETE", "No result"),
     ("OREGON", "Oregon"),
     ("USC", "USC"),
-    )
-
-GAME_9R = (
-    ("NOT_COMPLETE", "No result"),
-    ("GEORGIA", "Georgia"),
-    ("FLORIDA", "Florida"),
     )
 
 GAME_10R = (
