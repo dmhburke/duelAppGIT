@@ -34,7 +34,7 @@ DAYS = (
 GAME_1 = (
     ("", "Select result"),
     ("NETS", "Nets"),
-    ("ROCKETS", "Rockets"),
+    ("NETS", "Rockets"),
     )
 
 GAME_2 = (
@@ -71,20 +71,21 @@ GAME_6 = (
 
 GAME_7 = (
     ("", "Select result"),
+    ("ENGLAND", "England"),
+    ("SOUTH AFRICA", "South Africa"),
+    )
+
+
+GAME_8 = (
+    ("", "Select result"),
     ("OLE_MISS", "Ole Miss"),
     ("AUBURN", "Auburn"),
     )
 
-GAME_8 = (
+GAME_9 = (
     ("", "Select result"),
     ("OREGON", "Oregon"),
     ("USC", "USC"),
-    )
-
-GAME_9 = (
-    ("", "Select result"),
-    ("GEORGIA", "Georgia"),
-    ("FLORIDA", "Florida"),
     )
 
 GAME_10 = (
