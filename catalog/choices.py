@@ -128,15 +128,15 @@ GAME_5R = (
 
 GAME_6R = (
     ("NOT_COMPLETE", "No result"),
-    ("ENGLAND", "England"),
-    ("SOUTH_AFRICA", "South Africa"),
-    )
-
-GAME_6R = (
-    ("NOT_COMPLETE", "No result"),
     ("ARSENAL", "Arsenal"),
     ("WOLVERHAMPTON", "Wolverhampton"),
     ("DRAW", "Draw"),
+    )
+
+GAME_7R = (
+    ("NOT_COMPLETE", "No result"),
+    ("ENGLAND", "England"),
+    ("SOUTH_AFRICA", "South Africa"),
     )
 
 GAME_8R = (
