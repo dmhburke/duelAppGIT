@@ -34,7 +34,7 @@ DAYS = (
 GAME_1 = (
     ("", "Select result"),
     ("NETS", "Nets"),
-    ("NETS", "Rockets"),
+    ("ROCKETS", "Rockets"),
     )
 
 GAME_2 = (
@@ -72,7 +72,7 @@ GAME_6 = (
 GAME_7 = (
     ("", "Select result"),
     ("ENGLAND", "England"),
-    ("SOUTH AFRICA", "South Africa"),
+    ("SOUTH_AFRICA", "South Africa"),
     )
 
 
@@ -97,8 +97,8 @@ GAME_10 = (
 #RESULTS CHECK - change empty result value
 GAME_1R = (
     ("NOT_COMPLETE", "No result"),
-    ("ROCKETS", "Rockets"),
     ("NETS", "Nets"),
+    ("ROCKETS", "Rockets"),
     )
 
 GAME_2R = (
