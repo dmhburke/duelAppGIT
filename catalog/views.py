@@ -140,7 +140,7 @@ def playerdetail (request,name):
     if rd2holes_played >= target_holes:
         rd2golf_score = Rd2SlotModel.objects.get(player_name__name=name).player_score
         rd2golf_scoreRank = Rd2SlotModel.objects.filter(player_score__lt=rd2golf_score).count() + 1
-        rd2golf_stbl = Rd1SlotModel.objects.get(player_name__name=name).player_stbl
+        rd2golf_stbl = Rd2SlotModel.objects.get(player_name__name=name).player_stbl
         rd2golf_stblRank = Rd2SlotModel.objects.filter(player_stbl__gt=rd2golf_stbl).count() + 1
     else:
         rd2golf_score = "-"
