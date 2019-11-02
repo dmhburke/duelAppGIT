@@ -129,6 +129,10 @@ def playerdetail (request,name):
     #Trigger to show score only when round finished
     try:
         rd2holes_played = Rd2SlotModel.objects.get(player_name__name=name).player_holesplayed
+        if rd2holes_played is None:
+            rd2holes_played = 0
+        else:
+            rd2holes_played = Rd2SlotModel.objects.get(player_name__name=name).player_holesplayed
     except:
         rd2holes_played = 0
 
@@ -187,6 +191,10 @@ def playerdetail (request,name):
     #Trigger to show score only when round finished
     try:
         rd3holes_played = Rd3SlotModel.objects.get(player_name__name=name).player_holesplayed
+        if rd3holes_played is None:
+            rd3holes_played = 0
+        else:
+            rd3holes_played = Rd3SlotModel.objects.get(player_name__name=name).player_holesplayed
     except:
         rd3holes_played = 0
 
